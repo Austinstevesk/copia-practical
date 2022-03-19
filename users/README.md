@@ -8,6 +8,7 @@
 - Install dependencies   
 ```pip3 install -r requirements.txt```  
 
+# Ensure you have the database ```copia``` ready and make sure the URI is correct  
   
 # Running the code  
 - Navigate to the directory and run  
