@@ -5,7 +5,6 @@ user_args = sys.argv
 print(user_args)
 
 from time import time
-import pandas as pd
 import csv
 import requests
 
