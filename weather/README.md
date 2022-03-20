@@ -13,14 +13,12 @@
 - We then removed spaces using ```lines[i].split```  
 - ```splitted_lines.split``` ensures we create arrays for the different lines  
 - We then check whether both the values (MxT and MnT) are ints and have no asterics -> We can perform the subration operations directly  
-- We append the key, value pair to the list spread  
+- We append the spread which is an integer to ```spread list``` and concatinate the day to the ```day list```  
 - We then remove asteric from the MxT column and perform the subtraction operation 
-- We append the key, value pair to the list spread  
+- We append the spread which is an integer to ```spread list``` and concatinate the day to the ```day list```  
 - We also remove the asteric from MnT column then perform the subtraction operation  
-- We append the key, value pair to the list spread  
+- We append the spread which is an integer to ```spread list``` and concatinate the day to the ```day list```  
   
-- Create empty lists to hold keys and values for the spread dictionaries (vals and keys)  
-- We append all the items for the keys and values  
-- We find maximum of the vals list  
-- We get the index for the maximum value and use it to get the key  
-- We concatinate the key and the value and return the list  
+- We find maximum of the ```spread``` list  
+- We get the index for the maximum value and use it to get the day   
+- We concatinate the day with a string spread and print the result  
