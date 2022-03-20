@@ -4,15 +4,15 @@
 - Create a virtual environment using [Using Linux]  
 ```virtualenv venv -p python3.8```   
 -Activate the virtual environment  
-```source venv/bin/active```  
+```source venv/bin/activate```  
 - Install dependencies   
+```cd users/```  
 ```pip3 install -r requirements.txt```  
 
 # Ensure you have the database ```copia``` ready and make sure the URI is correct  
   
 # Running the code  
 - Navigate to the directory and run  
-```cd users/```  
 ```python3 users.py users.csv```  
   
 # Code breakdown  
