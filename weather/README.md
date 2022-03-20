@@ -22,3 +22,4 @@
 - We find maximum of the ```spread``` list  
 - We get the index for the maximum value and use it to get the day   
 - We concatinate the day with a string spread and print the result  
+- NOTE: We used a try except error to avoid code breakages  
