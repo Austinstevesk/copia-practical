@@ -2,13 +2,14 @@
   
 Question -> 3,5  
   
-# Module Details  
-- vehicle_details  
- - This incudes the vehicle details and C-Track-Data  
+# Module Details   
    
 # Installation  
 
 # Vehicle Module
+- vehicle_details  
+- This incudes the vehicle details and C-Track-Data  
+  
 - Clone the repository, copy vehicle_details module to odoo/custom/addons  
 - Restart odoo using ```sudo service odoo-server restart```  
 - Get to the UI and search for the module ```vehicle_details``` then install  
@@ -19,6 +20,8 @@ Question -> 3,5
 - Add the details and save  
 
 # Custom_partner module (For the customers)
+- This includes the custom_partner module to add children fields  
+  
 - Clone the repository, copy custom_partners module to odoo/custom/addons  
 - Restart odoo using ```sudo service odoo-server restart```  
 - Get to the UI and search for the module ```custom_partners``` then install  
