@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="res_partner_view_chidren" model="ir.ui.view">
+        <field name="name">res.partner.view.children</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <field name="has_children" />
+                <field name="no_of_children" attrs="{'invisible': [('has_children', '!=', 'yes')]}"/>
+                <field name="children_ids" attrs="{'invisible': [('has_children', '!=', 'yes')]}">
+                  <tree editable='top'>
+                    <field name="name" />
+                    <field name="age" />
+                    <field name="gender" />
+                  </tree>
+                </field>
+            </xpath>
+        </field>
+    </record>
+</odoo>
