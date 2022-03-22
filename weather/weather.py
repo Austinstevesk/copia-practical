@@ -3,7 +3,7 @@ try:
         lines = f.read().splitlines() #using this ensures we don't include line separators (\n) which come with f.readlines()
         # print(lines)
 
-        spread, day = list(), list(),
+        spread, day = list(), list()
 
         #We start at index 2 where actual data starts and we get to the second last
         for i in range(2, len(lines)-1): 
