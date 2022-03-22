@@ -4,7 +4,7 @@ try:
         # print(lines)
 
         spread, day = list(), list()
-
+        
         #We start at index 2 where actual data starts and we get to the second last
         for i in range(2, len(lines)-1): 
             stripped_lines = lines[i].strip()
