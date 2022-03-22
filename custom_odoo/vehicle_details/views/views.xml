@@ -1,0 +1,100 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="vehicle_details_list">
+      <field name="name">vehicle_details_list</field>
+      <field name="model">vehicle.details</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="vehicle_reg"/>
+          <field name="vehicle_type"/>
+          <field name="vehicle_make"/>
+          <field name="classic_no"/>
+          <field name="supplier"/>
+          <field name="fuel_type"/>
+          <field name="company" />
+        </tree>
+      </field>
+    </record>
+
+    <record model="ir.ui.view" id="vehicle_details_form">
+      <field name="name">vehicle_details_form</field>
+      <field name="model">vehicle.details</field>
+      <field name="arch" type="xml">
+        <form>
+        <group>
+            <group string='Vehicle Details'>
+              <field name="vehicle_reg"/>
+              <field name="vehicle_type"/>
+              <field name="vehicle_make"/>
+              <field name="classic_no"/>
+              <field name="supplier"/>
+              <field name="ins_exp_date"/>
+              <field name="fuel_type"/>
+              <field name="fuel_cons" />
+              <field name="vehicle_tag" />
+              <field name="vehicle_labels" />
+              <field name="vehicle_status" />
+              <field name="company" />
+            </group>
+
+            <group string='C-Track-Data'>
+              <field name="node_id"/>
+              <field name="node_type_id"/>
+              <field name="type"/>
+              <field name="fleet_no"/>
+              <field name="description"/>
+              <field name="mit"/>
+              <field name="serial_no" />
+              <field name="cell_no" />
+              <field name="vehicle_symbol" />
+              <field name="cost_center" />
+              <field name="last_tracked_at" />
+            </group>
+          </group>
+        </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="vehicle_details_action_window">
+      <field name="name">Vehicle Details</field>
+      <field name="res_model">vehicle.details</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="vehicle_details.action_server">
+      <field name="name">vehicle_details server</field>
+      <field name="model_id" ref="model_vehicle_details_vehicle_details"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+
+    <menuitem name="Vehicles" id="vehicle_details_menu_root"/>
+
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="vehicle_details.menu_1" parent="vehicle_details.menu_root"/>
+    <menuitem name="Menu 2" id="vehicle_details.menu_2" parent="vehicle_details.menu_root"/>
+-->
+    <!-- actions -->
+
+    <menuitem name="List" id="vehicle_details_menu" parent="vehicle_details_menu_root"
+              action="vehicle_details_action_window"/>
+
+  </data>
+</odoo>
