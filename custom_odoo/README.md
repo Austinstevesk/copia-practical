@@ -1,6 +1,6 @@
 # Odoo Custom Modules  
   
-Question -> 3,5  
+Questions -> 3 and 5  
   
 # Module Details   
    
